@@ -13,6 +13,7 @@
         --whiteDarker: #999;
         --action: #c44068;
         --actionDarker: #a3254c;
+        --maxWidth: 640px;
       }
       body {
         background-color: #000;
@@ -40,15 +41,19 @@
         font-style: italic;
       }
       header ul {
+        max-width: var(--maxWidth);
+        margin: 0 auto;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
       }
+      header li {
+        flex: 1 0 120px;
+      }
       header a {
-        display: inline-block;
-        min-width: 5rem;
+        display: block;
         margin: 0.5rem;
         padding: 0.75rem 1rem;
         border-radius: 3px;
@@ -62,7 +67,7 @@
         background-color: var(--action);
       }
       main {
-        max-width: 626px;
+        max-width: var(--maxWidth);
         margin: 2rem auto;
       }
       li span:not(:empty):before {
@@ -72,7 +77,7 @@
         color: var(--action);
       }
       footer {
-        max-width: 626px;
+        max-width: var(--maxWidth);
         margin: 3rem auto -3rem auto;
         padding: 1rem 2rem;
         background-color: rgba(0, 0, 0, 0.2);
@@ -101,135 +106,58 @@
     </header>
 
     <main>
-      <p>Being a collection of useful links to the metal or goth—and similar—enthusiast in Berlin.</p>
+      <p>Being a collection of useful links for the metal and goth enthusiast in Berlin.</p>
       <h2 id="venues">Venues</h2>
       <ul>
-        <li>
-          <a href="https://www.binuu.de" target="_blank">Bi Nuu</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://www.blackland.eu" target="_blank">Blackland</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.lido-berlin.de" target="_blank">Lido</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://www.so36.com" target="_blank">SO36</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://kesselhaus.net" target="_blank">Kesselhaus in der Kulturbrauerei</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://www.wildatheartberlin.de/" target="_blank">Wild At Heart</a>
-          <span>Punk and rockabilly</span>
-        </li>
-        <li>
-          <a href="https://schokoladen-mitte.de/" target="_blank">Schokoladen</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://huxleysneuewelt.com" target="_blank">Huxley's Neue Welt</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.festsaal-kreuzberg.de" target="_blank">Festsaal Kreuzberg</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://nukeclub.berlin" target="_blank">Nuke Club</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.astra-berlin.de" target="_blank">Astra Kulturhaus</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://brutzundbrakel.de/" target="_blank">Brutz & Brakel</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.velodrom.de" target="_blank">Velodrom</a>
-          <span></span>
-        </li>
+        <li><a href="https://www.astra-berlin.de" target="_blank">Astra Kulturhaus</a></li>
+        <li><a href="https://www.binuu.de" target="_blank">Bi Nuu</a></li>
+        <li><a href="http://www.blackland.eu" target="_blank">Blackland</a></li>
+        <li><a href="http://brutzundbrakel.de/" target="_blank">Brutz & Brakel</a></li>
+        <li><a href="https://www.festsaal-kreuzberg.de" target="_blank">Festsaal Kreuzberg</a></li>
+        <li><a href="https://huxleysneuewelt.com" target="_blank">Huxley's Neue Welt</a></li>
+        <li><a href="https://kesselhaus.net" target="_blank">Kesselhaus und Maschinenhaus in der Kulturbrauerei</a></li>
+        <li><a href="https://www.lido-berlin.de" target="_blank">Lido</a></li>
+        <li><a href="http://nukeclub.berlin" target="_blank">Nuke Club</a></li>
+        <li><a href="https://schokoladen-mitte.de/" target="_blank">Schokoladen</a></li>
+        <li><a href="http://www.so36.com" target="_blank">SO36</a></li>
+        <li><a href="https://www.velodrom.de" target="_blank">Velodrom</a></li>
+        <li><a href="http://www.wildatheartberlin.de/" target="_blank">Wild At Heart</a></li>
       </ul>
 
       <h2 id="bars">Bars</h2>
       <ul>
-        <li>
-          <a href="http://www.rock-wikingerbar.de/" target="_blank">Rock und Wikingerbar</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://www.halford-berlin.de/" target="_blank">Halford</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/pages/Feuermelder/156165631083683" target="_blank">Feuermelder</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://bamerang-berlin.com/" target="_blank">Bämeräng</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="http://www.rnrherberge.de" target="_blank">Rock'n'Roll Herberge</a>
-          <span></span>
-        </li>
+        <li><a href="http://bamerang-berlin.com/" target="_blank">Bämeräng</a></li>
+        <li><a href="https://www.facebook.com/pages/Feuermelder/156165631083683" target="_blank">Feuermelder</a></li>
+        <li><a href="http://www.halford-berlin.de/" target="_blank">Halford</a></li>
+        <li><a href="http://www.rock-wikingerbar.de/" target="_blank">Rock und Wikingerbar</a></li>
+        <li><a href="http://www.rnrherberge.de" target="_blank">Rock'n'Roll Herberge</a></li>
       </ul>
 
       <h2 id="shops">Shops</h2>
       <ul>
-        <li>
-          <a href="https://coretexrecords.com/" target="_blank">Core Tex</a>
-          <span>Punk, hardcore, metal; records and clothing</span>
-        </li>
-        <li>
-          <a href="https://www.darkstore.de" target="_blank">Darkstore</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.wonderland13.de" target="_blank">Wonderland 13</a>
-          <span></span>
-        </li>
+        <li><a href="https://coretexrecords.com/" target="_blank">Core Tex</a></li>
+        <li><a href="https://www.darkstore.de" target="_blank">Darkstore</a></li>
+        <li><a href="https://www.wonderland13.de" target="_blank">Wonderland 13</a></li>
       </ul>
 
       <h2 id="events">Regular Events</h2>
       <ul>
-        <li>
-          <a href="https://www.facebook.com/paranoidclubkreuzberg/" target="_blank">Paranoid Club</a>
-          <span>Heavy Rock Discotheque; 70s Hardrock & Protometal † 80s Heavy Metal † Psychedelic Rock & Stoner † 90s Pre-Grunge; Every 3rd saturday of the month</span>
-        </li>
-        <li>
-          <a href="https://www.sage-club.de/" target="_blank">Rock at Sage</a>
-          <span></span>
-        </li>
+        <li><a href="http://www.darkmarket.de" target="_blank">Dark Market</a><span>Gothic design and flea market</span></li>
+        <li><a href="https://www.facebook.com/paranoidclubkreuzberg/" target="_blank">Paranoid Club</a><span>Heavy Rock Discotheque; 70s Hardrock & Protometal † 80s Heavy Metal † Psychedelic Rock & Stoner † 90s Pre-Grunge; Every 3rd Saturday of the month</span></li>
+        <li><a href="https://www.sage-club.de/" target="_blank">Rock at Sage</a><span>Every Thursday</span></li>
       </ul>
 
       <h2 id="groups">Groups</h2>
       <ul>
-        <li>
-          <a href="https://www.meetup.com/The-Berlin-Metal-and-Gothic-Meetup-Group/" target="_blank">The Berlin Metal and Gothic Meetup Group</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/groups/berlinalternative/" target="_blank">Berlin Alternative</a>
-          <span>Facebook group</span>
-        </li>
-        <!-- <li>
-          <a href="#" target="_blank"></a>
-          <span></span>
-        </li> -->
+        <li><a href="https://www.facebook.com/groups/berlinalternative/" target="_blank">Berlin Alternative</a><span>Facebook group</span></li>
+        <li><a href="https://www.meetup.com/The-Berlin-Metal-and-Gothic-Meetup-Group/" target="_blank">The Berlin Metal and Gothic Meetup Group</a></li>
       </ul>
     </main>
 
     <footer>
-      <p>Website created by <a href="https://twitter.com/mottokrosh">Frank "Mottokrosh" Reding</a>, with elements from <a href="https://www.vecteezy.com" target="_blank">Vecteezy</a> and <a href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
+      <p>Website created by <a href="https://twitter.com/mottokrosh" target="_blank">Frank "Mottokrosh" Reding</a>, with elements from <a href="https://www.vecteezy.com" target="_blank">Vecteezy</a> and <a href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
       <p>To contribute, edit, or amend, create a pull request or issue in its <a href="https://github.com/Mottokrosh/berlin-metal-and-goth" target="_blank">open source GitHub repo</a>.</p>
+      <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
     </footer>
   </body>
 </html>
