@@ -6,12 +6,81 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- <link rel="shortcut icon" href="favicon.ico"> -->
     <title>Berlin Metal & Goth Resources</title>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Pirata+One" rel="stylesheet">
     <style>
+      :root {
+        --white: #ccc;
+        --whiteDarker: #999;
+        --action: #c44068;
+        --actionDarker: #a3254c;
+      }
       body {
+        background-color: #000;
         background-image: url('distressed-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center top;
+        background-position: center;
+        font-family: 'IM Fell English', serif;
+        color: var(--white);
+        font-size: 125%;
+        margin: 0;
+        padding: 3rem;
+      }
+      h1, h2, h3 {
+        font-family: 'Pirata One', cursive;
+      }
+      header {
+        text-align: center;
+      }
+      header img {
+        max-width: 320px;
+      }
+      header p {
+        color: var(--whiteDarker);
+        font-style: italic;
+      }
+      header ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+      }
+      header a {
+        display: inline-block;
+        min-width: 5rem;
+        margin: 0.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 3px;
+        background-color: var(--actionDarker);
+        color: var(--white);
+        font-size: 110%;
+        text-decoration: none;
+        transition: all 100ms linear;
+      }
+      header a:hover {
+        background-color: var(--action);
+      }
+      main {
+        max-width: 626px;
+        margin: 2rem auto;
+      }
+      li span:not(:empty):before {
+        content: '—';
+      }
+      a {
+        color: var(--action);
+      }
+      footer {
+        max-width: 626px;
+        margin: 3rem auto -3rem auto;
+        padding: 1rem 2rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color: var(--whiteDarker);
+        font-size: 75%;
+        text-align: center;
       }
     </style>
   </head>
@@ -32,54 +101,59 @@
     </header>
 
     <main>
+      <p>Being a collection of useful links to the metal or goth—and similar—enthusiast in Berlin.</p>
       <h2 id="venues">Venues</h2>
       <ul>
+        <li>
+          <a href="https://www.binuu.de" target="_blank">Bi Nuu</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="http://www.blackland.eu" target="_blank">Blackland</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="https://www.lido-berlin.de" target="_blank">Lido</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="http://www.so36.com" target="_blank">SO36</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="https://kesselhaus.net" target="_blank">Kesselhaus in der Kulturbrauerei</a>
+          <span></span>
+        </li>
         <li>
           <a href="http://www.wildatheartberlin.de/" target="_blank">Wild At Heart</a>
           <span>Punk and rockabilly</span>
         </li>
         <li>
-            <a href="https://schokoladen-mitte.de/" target="_blank"></a>
-            <span>Punk</span>
-        </li>
-        <li>
-          <a href="#" target="_blank">SO36</a>
+          <a href="https://schokoladen-mitte.de/" target="_blank">Schokoladen</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank">Huxley's Neue Welt</a>
+          <a href="https://huxleysneuewelt.com" target="_blank">Huxley's Neue Welt</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank">Bi Nuu</a>
+          <a href="https://www.festsaal-kreuzberg.de" target="_blank">Festsaal Kreuzberg</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank">Lido</a>
+          <a href="http://nukeclub.berlin" target="_blank">Nuke Club</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank">Festsaal Kreuzberg</a>
+          <a href="https://www.astra-berlin.de" target="_blank">Astra Kulturhaus</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank">Nuke Club</a>
+          <a href="http://brutzundbrakel.de/" target="_blank">Brutz & Brakel</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank">Velodrom</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank">Kesselhaus in der Kulturbrauerei</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank">Astra Kulturhaus</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank"></a>
+          <a href="https://www.velodrom.de" target="_blank">Velodrom</a>
           <span></span>
         </li>
       </ul>
@@ -103,7 +177,7 @@
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank"></a>
+          <a href="http://www.rnrherberge.de" target="_blank">Rock'n'Roll Herberge</a>
           <span></span>
         </li>
       </ul>
@@ -115,19 +189,11 @@
           <span>Punk, hardcore, metal; records and clothing</span>
         </li>
         <li>
-          <a href="#" target="_blank"></a>
+          <a href="https://www.darkstore.de" target="_blank">Darkstore</a>
           <span></span>
         </li>
         <li>
-          <a href="#" target="_blank"></a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank"></a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank"></a>
+          <a href="https://www.wonderland13.de" target="_blank">Wonderland 13</a>
           <span></span>
         </li>
       </ul>
@@ -136,18 +202,10 @@
       <ul>
         <li>
           <a href="https://www.facebook.com/paranoidclubkreuzberg/" target="_blank">Paranoid Club</a>
-          <span></span>
+          <span>Heavy Rock Discotheque; 70s Hardrock & Protometal † 80s Heavy Metal † Psychedelic Rock & Stoner † 90s Pre-Grunge; Every 3rd saturday of the month</span>
         </li>
         <li>
           <a href="https://www.sage-club.de/" target="_blank">Rock at Sage</a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank"></a>
-          <span></span>
-        </li>
-        <li>
-          <a href="#" target="_blank"></a>
           <span></span>
         </li>
       </ul>
@@ -156,14 +214,22 @@
       <ul>
         <li>
           <a href="https://www.meetup.com/The-Berlin-Metal-and-Gothic-Meetup-Group/" target="_blank">The Berlin Metal and Gothic Meetup Group</a>
-          <span>Meetup</span>
+          <span></span>
         </li>
+        <li>
+          <a href="https://www.facebook.com/groups/berlinalternative/" target="_blank">Berlin Alternative</a>
+          <span>Facebook group</span>
+        </li>
+        <!-- <li>
+          <a href="#" target="_blank"></a>
+          <span></span>
+        </li> -->
       </ul>
     </main>
 
     <footer>
-      <p>Website created by <a href="https://twitter.com/mottokrosh">Frank "Mottokrosh" Reding</a>.</p>
-      <p>To contribute, edit, or amend, create a pull request or issue in its open source GitHub repo.</p>
+      <p>Website created by <a href="https://twitter.com/mottokrosh">Frank "Mottokrosh" Reding</a>, with elements from <a href="https://www.vecteezy.com" target="_blank">Vecteezy</a> and <a href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
+      <p>To contribute, edit, or amend, create a pull request or issue in its <a href="https://github.com/Mottokrosh/berlin-metal-and-goth" target="_blank">open source GitHub repo</a>.</p>
     </footer>
   </body>
 </html>
