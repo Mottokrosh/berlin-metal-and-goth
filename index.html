@@ -13,6 +13,7 @@
         --whiteDarker: #999;
         --action: #c44068;
         --actionDarker: #a3254c;
+        --actionLighter: #c4667f;
         --maxWidth: 640px;
       }
       body {
@@ -29,6 +30,25 @@
       }
       h1, h2, h3 {
         font-family: 'Pirata One', cursive;
+      }
+      h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 0.5rem 1rem;
+      }
+      h2 a {
+        font-size: 70%;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        margin-left: 0.5rem;
+      }
+      h2 a:before {
+        content: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c44068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>');
+        padding-right: 0.5rem;
       }
       header {
         text-align: center;
@@ -65,6 +85,7 @@
       }
       header a:hover {
         background-color: var(--action);
+        color: var(--white);
       }
       main {
         max-width: var(--maxWidth);
@@ -75,6 +96,10 @@
       }
       a {
         color: var(--action);
+        transition: all 100ms linear;
+      }
+      a:hover {
+        color: var(--actionLighter);
       }
       footer {
         max-width: var(--maxWidth);
@@ -85,9 +110,6 @@
         border-top-right-radius: 3px;
         color: var(--whiteDarker);
         font-size: 75%;
-        text-align: center;
-      }
-      .c {
         text-align: center;
       }
     </style>
@@ -110,7 +132,7 @@
 
     <main>
       <p>Being a collection of useful links for the metal and goth enthusiast in Berlin.</p>
-      <h2 id="venues">Venues</h2>
+      <h2 id="venues"><span>Venues</span><a href="https://goo.gl/maps/kzhhLipAaPn" target="_blank">Venues Google Map</a></h2>
       <ul>
         <li><a href="http://www.arcanoa.de" target="_blank">Arcanoa</a></li>
         <li><a href="https://www.astra-berlin.de" target="_blank">Astra Kulturhaus</a></li>
@@ -134,9 +156,8 @@
         <li><a href="https://www.waldbuehne-berlin.de" target="_blank">Waldbühne Berlin</a></li>
         <li><a href="http://www.wildatheartberlin.de" target="_blank">Wild At Heart</a></li>
       </ul>
-      <p class="c">† <a href="https://goo.gl/maps/kzhhLipAaPn" target="_blank">Venues list as Google Map</a> †</p>
 
-      <h2 id="bars">Bars</h2>
+      <h2 id="bars"><span>Bars</span><a href="https://goo.gl/maps/GjMW6vNpXaC2" target="_blank">Bars Google Map</a></h2>
       <ul>
         <li><a href="https://www.baiz.info" target="_blank">Baiz</a></li>
         <li><a href="http://bamerang-berlin.com/" target="_blank">Bämeräng</a></li>
@@ -149,18 +170,16 @@
         <li><a href="http://www.rnrherberge.de" target="_blank">Rock'n'Roll Herberge</a></li>
         <li><a href="http://www.tikiheart.de" target="_blank">Tiki Heart Café</a></li>
       </ul>
-      <p class="c">† <a href="https://goo.gl/maps/GjMW6vNpXaC2" target="_blank">Bars list as Google Map</a> †</p>
 
-      <h2 id="shops">Shops</h2>
+      <h2 id="shops"><span>Shops</span><a href="https://goo.gl/maps/xnHNbKbqzRq" target="_blank">Shops Google Map</a></h2>
       <ul>
         <li><a href="https://coretexrecords.com/" target="_blank">Core Tex</a></li>
         <li><a href="https://www.darkstore.de" target="_blank">Darkstore</a></li>
         <li><a href="http://www.tikiheart.de" target="_blank">Tiki Heart Shop</a></li>
         <li><a href="https://www.wonderland13.de" target="_blank">Wonderland 13</a></li>
       </ul>
-      <p class="c">† <a href="https://goo.gl/maps/xnHNbKbqzRq" target="_blank">Shops list as Google Map</a> †</p>
 
-      <h2 id="events">Regular Events &amp; Festivals</h2>
+      <h2 id="events"><span>Regular Events &amp; Festivals</span><a href="https://goo.gl/maps/fGmWozDBqdS2" target="_blank">Events Google Map</a></h2>
       <ul>
         <li><a href="https://www.swampconspiracy.org" target="_blank">Berlin Swamp Fest</a></li>
         <li><a href="http://www.darkmarket.de" target="_blank">Dark Market</a><span>Gothic design and flea market</span></li>
@@ -172,7 +191,6 @@
         <li><a href="https://www.sage-club.de/" target="_blank">Rock at Sage</a><span>Every Thursday</span></li>
         <li><a href="https://business.facebook.com/events/412096935961608/" target="_blank">Systremma Fest</a><span>Expired Facebook event; currently no dedicated website</span></li>
       </ul>
-      <p class="c">† <a href="https://goo.gl/maps/fGmWozDBqdS2" target="_blank">Events list as Google Map</a> †</p>
 
       <h2 id="groups">Groups</h2>
       <ul>
