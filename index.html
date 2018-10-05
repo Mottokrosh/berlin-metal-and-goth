@@ -7,139 +7,19 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Berlin Metal & Goth Resources</title>
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Pirata+One" rel="stylesheet">
-    <style>
-      :root {
-        --white: #ccc;
-        --whiteDarker: #999;
-        --action: #c44068;
-        --actionDarker: #a3254c;
-        --actionLighter: #c4667f;
-        --maxWidth: 640px;
-      }
-      body {
-        background-color: #000;
-        background-image: url('distressed-bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        font-family: 'IM Fell English', serif;
-        color: var(--white);
-        font-size: 125%;
-        margin: 0;
-        padding: 3rem 0;
-      }
-      h1, h2, h3 {
-        font-family: 'Pirata One', cursive;
-      }
-      h2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 4rem;
-        background-color: rgba(0, 0, 0, 0.25);
-        padding: 0.5rem 2rem;
-        line-height: 1;
-      }
-      h2 a {
-        font-size: 70%;
-        display: flex;
-        align-items: center;
-        margin-left: 0.5rem;
-      }
-      h2 a:before {
-        content: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c44068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>');
-        padding-right: 0.5rem;
-      }
-      header {
-        text-align: center;
-        padding: 0 2rem;
-      }
-      header img {
-        max-width: 320px;
-      }
-      header p {
-        color: var(--whiteDarker);
-        font-style: italic;
-      }
-      header ul {
-        max-width: var(--maxWidth);
-        margin: 0 auto;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-      }
-      header li {
-        flex: 1 0 120px;
-      }
-      header a {
-        display: block;
-        margin: 0.5rem;
-        padding: 0.75rem 1rem;
-        border-radius: 3px;
-        background-color: var(--actionDarker);
-        color: var(--white);
-        font-size: 110%;
-        text-decoration: none;
-        transition: all 100ms linear;
-      }
-      header a:hover {
-        background-color: var(--action);
-        color: var(--white);
-      }
-      main {
-        max-width: var(--maxWidth);
-        margin: 2rem auto;
-      }
-      main > p {
-        padding: 0 2rem;
-      }
-      main ul {
-        padding: 0 2rem 0 3.25rem;
-        list-style-image: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>');
-      }
-      li span:not(:empty):before {
-        content: '—';
-      }
-      a {
-        color: var(--action);
-        transition: all 100ms linear;
-      }
-      a:hover {
-        color: var(--actionLighter);
-      }
-      footer {
-        max-width: var(--maxWidth);
-        margin: 3rem auto -3rem auto;
-        padding: 1rem 2rem;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        color: var(--whiteDarker);
-        font-size: 75%;
-        text-align: center;
-      }
-      @media (max-width: 480px) {
-        h2 {
-          display: block;
-        }
-        h2 a {
-          margin: 0.25rem 0 0 0;
-        }
-      }
-    </style>
+    <link href="styles.css" rel="stylesheet" >
   </head>
   <body>
     <header>
       <img src="skull-badge.svg" alt="Badge style illustration of a skull.">
       <h1>Berlin Metal & Goth Resources</h1>
-      <p>Last updated: 30th September 2018.</p>
+      <p>Last updated: 5th October 2018.</p>
       <nav>
         <ul>
           <li><a href="#venues">Venues</a></li>
           <li><a href="#bars">Bars</a></li>
           <li><a href="#shops">Shops</a></li>
+          <li><a href="#gigs">Gigs</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#groups">Groups</a></li>
         </ul>
@@ -197,6 +77,128 @@
         <li><a href="http://www.tikiheart.de" target="_blank">Tiki Heart Shop</a></li>
         <li><a href="https://www.wonderland13.de" target="_blank">Wonderland 13</a></li>
       </ul>
+
+      <h2 id="gigs"><span>Gigs</span><a href="https://berlinmetal.lima-city.de" target="_blank" class="no-marker">Courtesy of Berlin Metal</a></h2>
+      <div class="gigs">
+        <p class="konzerte">05.10. Conan, The Moth @<a href="http://musikundfrieden.de" class="konzertliste">Musik und Frieden</a></p>
+        <p class="konzerte">05.10. Sinsaenum, HateSphere @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">05.10. The Skull, Acid Muffin @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">06.10. Darkestrah, Nornír, Silent Leges Inter Arma, Shrike @Klinke</p>
+        <p class="konzerte">06.10. Infekcja, Krasskepala, Melmor @AGH</p>
+        <p class="konzerte">07.10. Humiliation, Agonized, Speedkobra @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">12.10. Lizzies, Hypnos @Monarch</p>
+        <p class="konzerte">12.10. Internal Quiet, Factor 8, The Mind Parasites @Piwnica Nr 1</p>
+        <p class="konzerte">12.10. Avataria, HoaxBane, Hamarsheimt, Tru'nembra @<a href="http://slaughterhouse-berlin.de" class="konzertliste">Slaughterhouse</a></p>
+        <p class="konzerte">12.10. Slaegt, Maggot Heart @<a href="http://urbanspree.com" class="konzertliste">Urban Spree</a></p>
+        <p class="konzerte">12.10. Down for Whatever, Phrenia @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">13.10. Full Assault, Sirius Curse, Chaos and Confusion, Nosturaack, Torturized @ORWOhaus</p>
+        <p class="konzerte">14.10. Carnal Tomb, Sentient Horror, Escarnium @<a href="http://www.sozdia.de/Jugendkulturzentrum-Linse.linse.0.html" class="konzertliste">Linse</a></p>
+        <p class="konzerte">14.10. Crowbar, EarthShip, Piece @<a href="http://so36.de" class="konzertliste">SO36</a></p>
+        <p class="konzerte">14.10. Agrypnie, Totalselfhatred, Arroganz, Asphagor @<a href="http://nukeclub.berlin" class="konzertliste">Nuke</a></p>
+        <p class="konzerte">16.10. Minenfeld, Kriegzittern @Koma F</p>
+        <p class="konzerte">16.10. The Vintage Caravan, Wucan, Black Mirrors @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">16.10. Elder, Ancestors @<a href="http://so36.de" class="konzertliste">SO36</a></p>
+        <p class="konzerte">17.10. Tsygun, Coäccion @Koma F</p>
+        <p class="konzerte">18.10. Primal Fear, Riot V, Existance @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">18.10. Kadaverficker, Meatknife, Bowel Evacuation @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">19.10. Endless Green, WiseManSays @JWD</p>
+        <p class="konzerte">19.10. Reactory @AGH</p>
+        <p class="konzerte">19.10. Alteri, Haeresis, Ivan Stalingrad @Abstand</p>
+        <p class="konzerte">19.10. Fallcie, Last Remaining Light, Pentastone @Double H</p>
+        <p class="konzerte">20.10. The Outside, Maat, Circles of Malice @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">20.10. Absolva, Edge of Ever @<a href="http://werk9.de" class="konzertliste">Werk9</a></p>
+        <p class="konzerte">20.10. Space Chaser, Distillator, Endseeker, Turbokill @<a href="http://binuu.de" class="konzertliste">Bi Nuu</a></p>
+        <p class="konzerte">20.10. Kinnara, Deadfreight of Soul, Everlasting Carnage, Goats Rising @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">21.10. Lucifer @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">22.10. Stratovarius, Tarja @Festsaal</p>
+        <p class="konzerte">23.10. Abraham, Set &amp; Setting, Future Usses @<a href="http://musikundfrieden.de" class="konzertliste">Musik und Frieden</a></p>
+        <p class="konzerte">24.10. Monuments, Vola, Kadinja, Atlas @<a href="http://binuu.de" class="konzertliste">Bi Nuu</a></p>
+        <p class="konzerte">26.10. Nyos @<a href="http://schokoladen-mitte.de" class="konzertliste">Schokoladen</a></p>
+        <p class="konzerte">27.10. Extinction of Mankind, Instinct of Survival, Visions of War, Fleas &amp; Lice @AGH</p>
+        <p class="konzerte">27.10. Archivist, Choral Hearse @Bei Ruth</p>
+        <p class="konzerte">27.10. Reactory, Eradicator @Zukunft</p>
+        <p class="konzerte">27.10. Kadavar, Monolord @Festsaal</p>
+        <p class="konzerte">27.10. Debauchery, Balgeroth @<a href="http://nukeclub.berlin" class="konzertliste">Nuke</a></p>
+        <p class="konzerte">31.10. Mystifier @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">31.10. Powerwolf, Amaranthe, Kissin' Dynamite @<a href="http://huxleysneuewelt.com" class="konzertliste">Huxley's</a></p>
+        <p class="konzerte">01.11. Sunken, Nekrose @Zukunft</p>
+        <p class="konzerte">02.11. Pandora's Tears, Abandon Lost, Decerebrate @<a href="http://slaughterhouse-berlin.de" class="konzertliste">Slaughterhouse</a></p>
+        <p class="konzerte">03.11. Kilminister @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">04.11. Beyond Creation, Gorod, Entheos, Brought by Pain @Musik &amp; Frieden</p>
+        <p class="konzerte">05.11. Nightwish, Beast in Black @Max-Schmeling-Halle</p>
+        <p class="konzerte">07.11. Autumnsphere @<a href="http://wildatheartberlin.de" class="konzertliste">Wild at Heart</a></p>
+        <p class="konzerte">07.11. Auðn, The Great Old Ones @<a href="http://nukeclub.berlin" class="konzertliste">Nuke</a></p>
+        <p class="konzerte">08.11. Clawfinger @<a href="http://columbia-theater.de" class="konzertliste">Columbia Theater</a></p>
+        <p class="konzerte">09.11. Ivory Tower, Sober Truth, Orcus Patera @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">09.11. Omnium Gatherum, Wolfheart, Nothgard @<a href="http://binuu.de" class="konzertliste">Bi Nuu</a></p>
+        <p class="konzerte">09.11. Fistula, Grime @Kastanienkeller</p>
+        <p class="konzerte">09.11. Saltatio Mortis @<a href="http://huxleysneuewelt.com" class="konzertliste">Huxley's</a></p>
+        <p class="konzerte">10.11. Vitja, Fall Brawl, River Becomes Ocean @Badehaus</p>
+        <p class="konzerte">11.11. Yob, Wiegedood @<a href="http://musikundfrieden.de" class="konzertliste">Musik und Frieden</a></p>
+        <p class="konzerte">14.11. Ghost Bath, MØL @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">14.11. Kataklysm, Hypocrisy @Kesselhaus</p>
+        <p class="konzerte">16.11. Japanische Kampfhörspiele, Excrementory Grindfuckers @<a href="http://nukeclub.berlin" class="konzertliste">Nuke</a></p>
+        <p class="konzerte">17.11. Yellow Eyes, Ancst, Anicon, Sinatra @Zukunft</p>
+        <p class="konzerte">17.11. Dehuman Reign, Eternal Dirge @<a href="http://tommyhaus.org" class="konzertliste">Tommyhaus</a></p>
+        <p class="konzerte">17.11. Earth Ship, Rising, Grim van Doom, Blacksmoker, Praise the Plague @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">18.11. Doro @<a href="http://astra-berlin.de" class="konzertliste">Astra</a></p>
+        <p class="konzerte">19.11. Tesseract, Between the Buried and Me, Plini @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">20.11. Guevnna, Bad Luck Rides on Wheels @Zukunft</p>
+        <p class="konzerte">20.11. Aborted, Cryptopsy, Benighted, Cytotoxin @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">22.11. Watain, Profanatica, Rotting Christ @<a href="http://astra-berlin.de" class="konzertliste">Astra</a></p>
+        <p class="konzerte">22.11. Muluc Pax, Anime Torment, Bloody Invasion @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">23.11. Dark Buddha Rising, Fuoco Fatuo @<a href="http://urbanspree.com" class="konzertliste">Urban Spree</a></p>
+        <p class="konzerte">23.11. Went Blank, BloodSplattered, Eden Log, Last Bit of Sanity @<a href="http://www.sozdia.de/Jugendkulturzentrum-Linse.linse.0.html" class="konzertliste">Linse</a></p>
+        <p class="konzerte">23.11. Sturmtief, Draw Back, Gorelem @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">23.11. Manos @Brutz &amp; Brakel</p>
+        <p class="konzerte">23.11. Mono Inc., Hell Boulevard @<a href="http://huxleysneuewelt.com" class="konzertliste">Huxley's</a></p>
+        <p class="konzerte">24.11. Varg, Eisregen, Harpye @<a href="http://huxleysneuewelt.com" class="konzertliste">Huxley's</a></p>
+        <p class="konzerte">24.11. vAv, Sturmtief, Draw Back @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">26.11. Uncle Acid &amp; The Deadbeats @<a href="http://so36.de" class="konzertliste">SO36</a></p>
+        <p class="konzerte">27.11. Annihilator @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">28.11. Revocation, Archspire, Soreption, Rivers of Nihil @Badehaus</p>
+        <p class="konzerte">29.11. Sodomizer, Wömit Angel @<a href="http://tommyhaus.org" class="konzertliste">Tommyhaus</a></p>
+        <p class="konzerte">30.11. Human Traces, Red Strict Area @Bunte Kuh</p>
+        <p class="konzerte">30.11. Belzebong, The Necromancers @Zukunft</p>
+        <p class="konzerte">30.11. Forge, Tears of Fire, Silent Saga, Projekt Krank @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">01.12. Mantar, Skeletonwitch, Evil Invaders, Deathrite @<a href="http://so36.de" class="konzertliste">SO36</a></p>
+        <p class="konzerte">02.12. Slayer, Lamb of God, Anthrax, Obituary @MB-Arena</p>
+        <p class="konzerte">06.12. Aura Noir, Obliteration, Vorbid @<a href="http://nukeclub.berlin" class="konzertliste">Nuke</a></p>
+        <p class="konzerte">07.12. Illdisposed, Torture Pit, Hierodule @<a href="http://nukeclub.berlin" class="konzertliste">Nuke</a></p>
+        <p class="konzerte">08.12. Bell Witch @Zukunft</p>
+        <p class="konzerte">08.12. Kâhld, Groll, Path of Destiny, Arkona (PL), Iron Kindl Pest @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">08.12. Within Temptation @<a href="http://columbiahalle.de" class="konzertliste">Columbiahalle</a></p>
+        <p class="konzerte">15.12. Daily Insanity, Yardfield Colony, Deathstorm @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">15.12. Thunder and Lightning, Circle of Silence, Fireforce @Maze</p>
+        <p class="konzerte">22.12. Thyrgrim, Misanthropia, Dead End @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">25.12. Moribund Oblivion, Burning Cross, Skalfar @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">28.12. Skew Siskin, Nitrogods @Kesselhaus</p>
+        <p class="konzerte">29.12. Praying Angel @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">11.01. Endstille, Farsot., Herbstschatten @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">23.01. Brainstorm, Midnight Ghost @<a href="http://binuu.de" class="konzertliste">Bi Nuu</a></p>
+        <p class="konzerte">23.01. Grave Digger, Burning Witches @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">24.01. Behemoth, At the Gates, Wolves in the Throne Room @<a href="http://huxleysneuewelt.com" class="konzertliste">Huxley's</a></p>
+        <p class="konzerte">26.01. Carnal Defragma, In Demoni, Purulent Spermcanal, Cerebral Enema @KvU</p>
+        <p class="konzerte">26.01. Fiat Nox, Zwielicht, KVR, Painferno @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">29.01. Amorphis, Soilwork, Jinjer, Nailed to Obscurity @Kulturbrauerei</p>
+        <p class="konzerte">01.02. Motorjesus @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">16.02. Amenra @Festsaal</p>
+        <p class="konzerte">19.02. Ozzy Osbourne, Judas Priest @MB Arena</p>
+        <p class="konzerte">20.02. Obscura, Fallujah, Allegaeon, First Fragment @<a href="http://lido-berlin.de" class="konzertliste">Lido</a></p>
+        <p class="konzerte">23.02. Attacktion @Zosch</p>
+        <p class="konzerte">28.02. Dust Bolt @<a href="http://cassiopeia-berlin.de" class="konzertliste">Cassiopeia</a></p>
+        <p class="konzerte">02.03. Oomph!, Nervenbeisser @<a href="http://astra-berlin.de" class="konzertliste">Astra</a></p>
+        <p class="konzerte">03.03. U.D.O. @Kesselhaus</p>
+        <p class="konzerte">07.03. Gaahls Wyrd, Tribulation, Uada @<a href="http://binuu.de" class="konzertliste">Bi Nuu</a></p>
+        <p class="konzerte">14.03. Overkill, Destruction, Flotsam and Jetsam, Meshiaak @<a href="http://columbia-theater.de03" class="konzertliste">Columbia Theater03</a></p>
+        <p class="konzerte">16.03. Black Hawk, Iron Horses, Metall, Ivory Tower @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">03.04. Avantasia @<a href="http://huxleysneuewelt.com" class="konzertliste">Huxley's</a></p>
+        <p class="konzerte">05.04. The Privateer, Antyra, Logar's Diary, Varus @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">06.04. Hån, Burkhartsvinter, Schyach, Apega @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">27.04. Infaust, Chaedrist, Norgaahl @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">15.06. Slow Kill System, Divide, Deadflesh, Obskura @<a href="http://blackland666.de" class="konzertliste">Blackland</a></p>
+        <p class="konzerte">06.07. Metallica, Ghost, Bokassa @Olympiastadion</p>
+      </div>      
 
       <h2 id="events"><span>Regular Events &amp; Festivals</span><a href="https://goo.gl/maps/fGmWozDBqdS2" target="_blank">Events Google Map</a></h2>
       <ul>

@@ -1,1 +1,3 @@
-# berlin-metal-and-goth
+# Berlin Metal and Goth Resources
+
+Pull requests with contributions welcome.
